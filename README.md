@@ -22,8 +22,29 @@ css/styles.css
 js/main.js    # Scroll progress bar + “Yes — Forever” button
 ```
 
-## Deploy (optional)
+## GitHub Pages — make https://hrmughal35.github.io/helloluv/ work
 
-Upload **`index.html`**, **`css/`**, and **`js/`** to any static host (GitHub Pages, Netlify, your own server).
+The code is pushed to **[github.com/hrmughal35/helloluv](https://github.com/hrmughal35/helloluv)**. Pages is **not** on until you enable it once:
+
+### Option A — GitHub Actions (recommended; workflow is already in this repo)
+
+1. On GitHub open **helloluv** → **Settings** → **Pages** (left sidebar).
+2. Under **Build and deployment**, set **Source** to **GitHub Actions** (not “Deploy from a branch”).
+3. Go to the **Actions** tab and open the latest **Deploy to GitHub Pages** run — wait until it shows a green check.
+4. Your site URL (when ready): **`https://hrmughal35.github.io/helloluv/`**  
+   (GitHub also shows the exact link on the Pages settings screen after the first successful deploy.)
+
+If the workflow fails, confirm **Settings → Actions → General → Workflow permissions** allows workflows to read/write (for Pages deployment).
+
+### Option B — Deploy from branch (no Actions)
+
+1. **Settings** → **Pages** → **Source**: **Deploy from a branch**.
+2. Branch: **`main`**, folder: **`/ (root)`** → **Save**.
+
+Either way, wait **1–3 minutes** after saving, then open the **`/helloluv/`** URL above (not the `github.com/...` repo page).
+
+## Other hosts
+
+Upload **`index.html`**, **`css/`**, and **`js/`** anywhere that serves static files (Netlify, Cloudflare Pages, etc.).
 
 Made with love for Samrah.
