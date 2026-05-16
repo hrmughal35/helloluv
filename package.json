@@ -1,0 +1,9 @@
+{
+  "name": "samrah-love-universe",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static HTML/CSS/JS for Samrah — open index.html in a browser (no build step).",
+  "scripts": {
+    "serve": "npx --yes serve . -l 3456"
+  }
+}
